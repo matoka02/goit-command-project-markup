@@ -5,7 +5,7 @@
   "homepage": "https://matoka02.github.io/goit-command-project-markup",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-command-project-markup /"
+    "build": "parcel build src/*.html --public-url /goit-command-project-markup/"
   },
   "repository": {
     "type": "git",

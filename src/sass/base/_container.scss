@@ -1,0 +1,29 @@
+// 0px - 479px
+.container {
+  // Вот эти margin позволяют удержать контент по центру страницы
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// 480px - 767px
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+// 768px - 1199px
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 10px;
+  }
+}

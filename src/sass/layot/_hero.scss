@@ -1,0 +1,314 @@
+.hero {
+  position: relative;
+}
+
+.hero-container {
+  background: url('../images/hero/points-left-mobile-@1x.png') 0 100%/110px 34px no-repeat, url('../images/hero/points-right-mobile-@1x.png') 100% 100%/130px 48px no-repeat;
+}
+
+@media (min-device-pixel-ratio:2),
+(min-resolution:192dpi),
+(min-resolution:2x) {
+  .hero-container {
+    background: url('../images/hero/points-left-mobile-@2x.png') 0 100%/110px 34px no-repeat, url('../images/hero/points-right-mobile-@2x.png') 100% 100%/130px 48px no-repeat;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .hero-container {
+    background: url('../images/hero/points-left-tablet-@1x.png') 0 100%/110px 34px no-repeat, url('../images/hero/points-right-tablet-@1x.png') 100% 100%/182px 67px no-repeat;
+  }
+}
+
+@media screen and (min-width:768px) and (min-device-pixel-ratio:2),
+screen and (min-width:768px) and (min-resolution:192dpi),
+screen and (min-width:768px) and (min-resolution:2x) {
+  .hero-container {
+    background: url('../images/hero/points-left-tablet-@2x.png') 0 100%/110px 34px no-repeat, url('../images/hero/points-right-tablet-@2x.png') 100% 100%/182px 67px no-repeat;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero-container {
+    background: url('../images/hero/points-desktop-@2x.png') bottom/1200px 384px no-repeat;
+  }
+}
+
+@media screen and (min-width:1200px) and (min-device-pixel-ratio:2),
+screen and (min-width:1200px) and (min-resolution:192dpi),
+screen and (min-width:1200px) and (min-resolution:2x) {
+  .hero-container {
+    background: url('../images/hero/points-desktop-@2x.png') bottom/1200px 384px no-repeat;
+  }
+}
+
+
+.hero__content {
+  padding-top: 110px;
+  padding-bottom: 240px;
+  position: relative;
+}
+
+@media screen and (min-width:768px) {
+  .hero__content {
+    padding-top: 105px;
+    padding-bottom: 11.30px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero__content {
+    padding-top: 118px;
+    padding-bottom: 65px;
+  }
+}
+
+.hero__title {
+  max-width: 250px;
+  margin-bottom: 32px;
+
+  font-family: var(--secondary-font-family);
+  font-size: 2.600rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color-teme-dark);
+}
+
+@media screen and (min-width:768px) {
+  .hero__title {
+    max-width: 182px;
+    margin-bottom: 20px;
+
+    font-size: 1.800rem;
+    line-height: 1.27778;
+    letter-spacing: normal;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero__title {
+    max-width: 367px;
+    margin-bottom: 28px;
+
+    font-size: 3.800rem;
+    line-height: 1.26316;
+  }
+}
+
+.hero__title>span {
+  font-size: 34px;
+  line-height: 0;
+}
+
+@media screen and (min-width:768px) {
+  .hero__title>span {
+    font-size: 2.400rem;
+    line-height: 1.26316;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero__title>span {
+    font-size: 3.800rem;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 8px;
+}
+
+@media screen and (min-width:768px) {
+  .hero__buttons {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero__buttons {
+    gap: 0;
+    margin-bottom: 42px;
+  }
+}
+
+.hero__btn {
+  display: block;
+  border-radius: 8px;
+  padding: 6px 10px;
+
+  font-size: .8rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+@media screen and (min-width:1200px) {
+  .hero__btn {
+    border-radius: 10px;
+    padding: 10px 32px;
+    font-size: 1.4rem;
+    line-height: 1.28571;
+  }
+}
+
+.hero__description {
+  position: relative;
+}
+
+@media screen and (max-width:767px) {
+  .hero__description {
+    display: none;
+  }
+}
+
+.hero__plate {
+  animation: plate-rotate 20s linear infinite;
+  // view in _anomations.scss
+}
+
+
+.hero__text-wrapper {
+  position: absolute;
+  top: 28px;
+  left: 185px;
+}
+
+@media screen and (min-width:1200px) {
+  .hero__text-wrapper {
+    top: 68px;
+    left: 239px;
+  }
+}
+
+.hero__text {
+  max-width: 151px;
+  margin-bottom: 12px;
+
+  font-size: 1.2rem;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: var(--secondary-text-color-teme-dark);
+}
+
+@media screen and (min-width:1200px) {
+  .hero__text {
+    max-width: 200px;
+    margin-bottom: 24px;
+
+    font-size: 1.4rem;
+  }
+}
+
+.hero__link {
+  display: block;
+}
+
+.hero__link:focus>.hero__arrow {
+  transform: scale(1.2)
+}
+
+.hero__arrow {
+  fill: var(--secondary-text-color-teme-dark);
+
+  transform-origin: 0;
+  transition: transform .25s cubic-bezier(.4, 0, .2, 1)
+}
+
+.hero__arrow:hover {
+  transform: scaleX(1.2);
+}
+
+.hero__image-wrapper {
+  position: absolute;
+
+  min-width: 157px;
+}
+
+@media screen and (max-width:767px) {
+  .hero__image-wrapper {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .hero__image-wrapper {
+    bottom: 0;
+    right: 61px;
+
+    // animation: ice-cream-rotate 1s ease-in-out;
+    // view in _anomations.scss
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero__image-wrapper {
+    right: 86px;
+  }
+}
+
+.hero__img {
+  animation: ice-cream-shadow-spawn 1s ease-in-out 1s forwards, ice-cream-shadow-flash 1s ease-in-out 2s infinite alternate;
+  // view in _anomations.scss
+}
+
+
+.statistics {
+  position: absolute;
+  top: 94px;
+  right: 0;
+}
+
+@media screen and (max-width:767px) {
+  .statistics {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .statistics {
+    top: 126px;
+  }
+}
+
+.statistics__item {
+  text-align: right;
+  font-size: .8rem;
+  line-height: 1.25;
+
+  color: var(--secondary-text-color-teme-dark);
+}
+
+.statistics__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width:1200px) {
+  .statistics__item {
+    font-size: 1.4rem;
+    line-height: 1.21429;
+  }
+
+  .statistics__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.statistics__item>span {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.21429;
+
+  color: var(--primery-text-color-teme-light);
+}
+
+@media screen and (min-width:1200px) {
+  .statistics__item>span {
+    font-size: 4.6rem;
+    line-height: 1.21739;
+  }
+}

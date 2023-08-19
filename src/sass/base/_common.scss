@@ -1,44 +1,85 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+  font-size: 10px;
+
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: var(--primery-font-family);
+  font-size: 1.4rem;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+
+  color: var(--primery-text-color-teme-light);
+  background-color: var(--background-color-teme-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 img,
 picture {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-html, body,
-a:hover, a:focus,
-button:hover, button:focus,
-label, label::after, label::before {
-    cursor: url("../images/cursor.svg"), pointer;
+html,
+body,
+a:hover,
+a:focus,
+button:hover,
+button:focus,
+label,
+label::after,
+label::before {
+  cursor: url('../images/cursor.svg'), pointer;
 }
 
 .accent {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
-
-
 
 // функция для использования rem
 $baseFontSize: 16;
-@function rem($pixels, $min: 12) {
-    @if (unitless($pixels)) {
-        $pixels: $pixels * 1px;
-    }
-    @if (unitless($min)) {
-        $min: $min * 1px;
-    }
-    $context: 16px;
 
-    @return #{"max("}#{$pixels / $context * 1rem}#{", "}#{$min}#{")"};
+@function rem($pixels, $min: 12) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($min)) {
+    $min: $min * 1px;
+  }
+
+  $context: 16px;
+
+  @return #{'max('}#{$pixels / $context * 1rem}#{', '}#{$min}#{')'};
 }

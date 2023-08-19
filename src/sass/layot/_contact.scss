@@ -1,0 +1,238 @@
+.contacts {
+  padding-top: 1028px;
+  padding-bottom: 40px;
+  position: relative;
+}
+@media screen and (min-width:320px) {
+  .contacts {
+    padding-top: 962px;
+  }
+}
+@media screen and (min-width:768px) {
+  .contacts {
+    padding-top: 284px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .contacts {
+    padding-top: 506px;
+    padding-bottom: 120px;
+  }
+}
+
+.contacts__list {
+  position: absolute;
+  top: -346px;
+  left: 50%;
+  transform: translate(-50%);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+}
+@media screen and (min-width:768px) {
+  .contacts__list {
+    top: -303px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .contacts__list {
+    top: -96px;
+
+    grid-column-gap: 32px;
+  }
+}
+
+.contacts__list>li {
+  width: calc(100vw - 40px);
+  padding: 38px 32px 40px;
+  border-radius: 24px;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.86;
+
+  box-shadow: 0 8px 30px rgba(212, 20, 67, .1);
+  background-color: var(--secondary-text-color-teme-dark);
+}
+@media screen and (min-width:320px) {
+  .contacts__list>li {
+    width: 280px;
+  }
+}
+@media screen and (min-width:768px) {
+  .contacts__list>li {
+    width: 224px;
+    padding: 40px 24px 36px;
+
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width:1200px) {
+  .contacts__list>li {
+    width: 368px;
+    padding: 40px 40px 32px;
+
+    font-size: 1.6rem;
+  }
+}
+
+.contacts__card {
+  min-width: 80px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 0 20.5px;
+
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.33;
+
+  background-color: var(--third-text-color-teme-dark);
+}
+@media screen and (min-width:768px) {
+  .contacts__card {
+    min-width: 75px;
+    border-radius: 6px;
+    margin-bottom: 32px;
+    padding: 0 11px;
+
+    font-size: 1.6rem;
+    line-height: 1.75;
+  }
+}
+
+.contacts__address {
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+@media screen and (min-width:768px) {
+  .contacts__address {
+    margin-bottom: 32px;
+    padding-bottom: 18px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .contacts__address {
+    padding-bottom: 23px;
+  }
+}
+
+.contacts__address-link {
+  display: block;
+  margin-top: 8px;
+
+  line-height: 1.83;
+
+  color: #d6936d;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .contacts__address-link {
+    margin-top: 12px;
+
+    line-height: 1.87;
+  }
+}
+
+.contacts__schedule {
+  margin-bottom: 08px;
+
+  letter-spacing: normal;
+}
+@media screen and (min-width:768px) {
+  .contacts__schedule {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .contacts__schedule {
+    margin-bottom: 13px;
+
+    letter-spacing: .04em;
+  }
+}
+
+.contacts__schedule:nth-last-of-type(1) {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+@media screen and (min-width:768px) {
+  .contacts__schedule:nth-last-of-type(1) {
+    margin-bottom: 33px;
+    padding-bottom: 33px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .contacts__schedule:nth-last-of-type(1) {
+    margin-bottom: 31px;
+    padding-bottom: 31px;
+  }
+}
+
+.contacts__schedule>span {
+  display: block;
+  letter-spacing: normal;
+
+  color: #ababab;
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .contacts__schedule>span {
+    line-height: 1.5;
+  }
+}
+
+.contacts__email,
+.contacts__phone {
+  display: block;
+
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+@media screen and (min-width:768px) {
+  .contacts__email,
+  .contacts__phone {
+    line-height: 1.83;
+  }
+}
+
+.contacts-container__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+@media screen and (min-width:768px) {
+  .contacts-container__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contacts__btn {
+  min-width: 196px;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  display: flex;
+}
+
+.contacts_btn-icon {
+  fill: currentColor;
+}

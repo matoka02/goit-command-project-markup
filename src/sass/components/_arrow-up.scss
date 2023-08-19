@@ -1,0 +1,36 @@
+.arrow-up {
+  position: fixed;
+  bottom: 95px;
+  right: 30px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--secondary-text-color-teme-dark);
+  box-shadow: 0 1px 2px rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+
+  opacity: .7;
+  transition: color .25s cubic-bezier(.4, 0, .2, 1), transform .25s cubic-bezier(.4, 0, .2, 1), opacity .25s cubic-bezier(.4, 0, .2, 1);
+  transform: scale(1);
+
+  &:hover{
+    color: var(--third-text-color-teme-dark);
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.arrow-up.hide {
+  display: none;
+}
+
+.arrow-up-icon {
+  fill: currentColor;
+  transform: rotate(-90deg)
+}

@@ -1,0 +1,38 @@
+// 0px - 767px
+.title-label {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Seymour One', sans-serif;
+  font-size: 3rem;
+  line-height: 1.27;
+}
+
+// 768px - 1199px
+@media screen and (min-width: 768px) {
+  .title-label {
+    font-size: 2.2rem;
+  }
+
+  .title {
+    font-size: 3.4rem;
+  }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+  .title-label {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 3.6rem;
+  }
+}

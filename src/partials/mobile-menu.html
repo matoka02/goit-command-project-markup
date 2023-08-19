@@ -1,0 +1,49 @@
+<div class="js-menu-container mobile-menu" id="mobile-menu">
+  <div class="container">
+    <div class="mobile-menu__header">
+      <a class="logo" href="#">
+        <picture>
+          <source srcset="./images/common/Logo-desktop-@1x.webp 1x, ./images/common/Logo-desktop-@2x.webp 2x"
+            media="(min-width: 1200px)" type="image/webp">
+          <source srcset="./images/common/Logo-tablet-@1x.webp 1x, ./images/common/Logo-tablet-@2x.webp 2x" media="(min-width: 480px)"
+            type="image/webp">
+          <source srcset="./images/common/Logo-mobile-@1x.webp 1x, ./images/common/Logo-mobile-@2x.webp 2x" media="(max-width: 479px)"
+            type="image/webp">            
+          <source srcset="./images/common/Logo-desktop-@1x.png 1x, ./images/common/Logo-desktop-@2x.png 2x"
+            media="(min-width: 1200px)" type="image/png">
+          <source srcset="./images/common/Logo-tablet-@1x.png 1x, ./images/common/Logo-tablet-@2x.png 2x" media="(min-width: 480px)"
+            type="image/png">
+          <source srcset="./images/common/Logo-mobile-@1x.png 1x, ./images/common/Logo-mobile-@2x.png 2x" media="(max-width: 479px)"
+            type="image/png">
+          <img class="logo" src="./images/common/Logo-mobile-@1x.png" alt="logo">
+        </picture>
+      </a>
+      <button class="cross js-close-menu" type="button">
+        <svg class="cross__icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-button-close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item">
+          <a href="#page-header" class="mobile-nav__link">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#about" class="mobile-nav__link">How it’s made?</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#products" class="mobile-nav__link">Our products</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#contacts" class="mobile-nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn btn--buy btn--primary mobile-menu__btn" type="button" data-modal-open="buy-now"> Buy now
+      <svg class="btn__icon" width="12" height="12">
+        <use href="./images/sprite.svg#icon-button-arrow-buy"></use>
+      </svg>
+    </button>
+  </div>
+</div>

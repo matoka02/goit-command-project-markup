@@ -1,0 +1,37 @@
+<div class="backdrop is-hidden" data-modal="buy-now" data-modal-backdrop>
+  <div class="modal">
+    <button class="close-button" type="button" data-modal-close="">
+      <svg class="close-button__icon" width="20" height="20">
+        <use href="./images/sprite.svg#icon-button-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title title">Buy now</h2>
+    <form class="modal-form" name="modal-form">
+      <div class="modal-list__checkbox-wrapper">
+        <input class="modal-list__checkbox visually-hidden" name="product" type="checkbox" id="checkbox-icecream"
+          required>
+        <label class="modal-list__label modal-list__label--green" for="checkbox-icecream">ice cream</label>
+        <input class="modal-list__checkbox visually-hidden" name="product" type="checkbox" id="checkbox-icecoffee"
+          required>
+        <label class="modal-list__label modal-list__label--yellow" for="checkbox-icecoffee">ice coffee</label>
+        <input class="modal-list__checkbox visually-hidden" name="product" type="checkbox" id="checkbox-milkshake"
+          required>
+        <label class="modal-list__label modal-list__label--brown" for="checkbox-milkshake">milkshake</label>
+      </div>
+      <div class="modal-form__input-wrapper">
+        <input type="text" class="modal-form__input" name="name" id="name" placeholder=" " required="" minlength="2">
+        <label class="modal-form__label" for="name">Name</label>
+      </div>
+      <div class="modal-form__input-wrapper">
+        <input type="tel" class="modal-form__input" name="tel" id="tel" placeholder=" " required="" minlength="10">
+        <label class="modal-form__label" for="tel">Phone</label>
+      </div>
+      <div class="modal-form__input-wrapper modal-form__input-wrapper--textarea">
+        <textarea class="modal-form__input modal-form__input--textarea" name="modal-form__textarea" id="comment"
+          placeholder=" " minlength="10" required=""></textarea>
+        <label class="modal-form__label" for="comment">Comment</label>
+      </div>
+      <button class="btn btn--primary modal__btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,2 @@
+var arrowUp={el:document.querySelector(".arrow-up"),show:function(){this.el.classList.remove("hide")},hide:function(){this.el.classList.add("hide")},addEventListener:function(){var e=this;window.addEventListener("scroll",(function(){(window.scrollY||document.documentElement.scrollTop)>400?e.show():e.hide()})),document.querySelector(".arrow-up").onclick=function(){window.scrollTo({top:0,left:0,behavior:"smooth"})}}};arrowUp.addEventListener();
+//# sourceMappingURL=index.828ca9c3.js.map

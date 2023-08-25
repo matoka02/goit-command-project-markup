@@ -63,6 +63,10 @@ label::before {
   cursor: url('../images/cursor.svg'), pointer;
 }
 
+video {
+  cursor: pointer;
+}
+
 .accent {
   color: var(--accent-color);
 }

@@ -58,14 +58,14 @@
   transition: color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1);
 
   &:hover{
-      background-color: var(--hover-button-color-teme);
+      border-color: var(--hover-button-color-teme);
   }
   &:focus {
       color: var(--focus-button-color-teme);
-      background-color: var(--hover-button-color-teme);
+      border-color: var(--hover-button-color-teme);
   }
   &:disabled {
-      background-color: var(--disabled-button-color-teme);
+      border-color: var(--disabled-button-color-teme);
   }
 }
 

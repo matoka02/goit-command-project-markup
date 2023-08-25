@@ -67,8 +67,20 @@
 }
 
 .burger{
+  padding: 0;
+  border: none;
   display: flex;
   justify-content: center;
+  background-color: inherit;
+}
+@media screen and (min-width:1199px) {
+  .burger {
+      display: none;
+  }
+}
+
+.burger__icon {
+  fill: var(--secondary-text-color-teme-dark);
 }
 
 .btn--buy {

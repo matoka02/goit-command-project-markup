@@ -51,23 +51,22 @@ a {
   text-decoration: none;
 }
 
-
-html,
-body,
-a:hover,
-a:focus,
-button:hover,
-button:focus,
-label,
-label::after,
-label::before {
-  cursor: url('../images/cursor.svg'), pointer;
+@media screen and (min-width: 768px) {
+  body,
+  a:hover,
+  a:focus,
+  button:hover,
+  button:focus,
+  label,
+  label::after,
+  label::before {
+    cursor: url('../images/cursor.svg'), pointer;
+  }
 }
 
 video {
   cursor: pointer;
 }
-
 
 .accent {
   color: var(--accent-color);
